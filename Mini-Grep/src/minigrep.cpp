@@ -36,12 +36,13 @@ int main(int argc, char* argv[]) {
             c = tolower(c);
         }
         if (lowerLine.find(keyword) != string::npos) {
-            cout << lineNumber << ": " << line << endl;
+            cout << filename << ":" << lineNumber << ": " << line << endl;
             matchCount++;
         }
         lineNumber++;
     }
 
+   if (matchCount > 0)
     cout << "Total matches: " << matchCount << endl;
 
     file.close();
