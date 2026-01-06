@@ -1,43 +1,35 @@
-# Mini Grep
+# Mini Grep (C++)
+
+Mini Grep is a lightweight command-line text search utility inspired by the Unix `grep` tool.
+It searches for a given keyword in a text file and prints matching lines along with their line numbers and total match count.
+
+---
 
 ## Status
-Work in progress
+Completed
 
-## Description
-Mini Grep is a command-line text search utility inspired by the Unix `grep` tool.
-The project focuses on implementing pattern searching in text files using C++, while strengthening understanding of file handling, string processing, and command-line programs.
+---
 
-## Objectives
-- Understand how text-search utilities work internally  
-- Practice efficient file reading and string matching  
-- Build familiarity with command-line tools  
+## Features
+- Case-insensitive keyword search
+- Displays line numbers for matched lines
+- Prints total number of matches
+- Graceful handling of file and input errors
+- Simple command-line interface
 
-## Planned Features
-- Sear# Mini Grep
-
-## Status
-Work in progress
-
-## Description
-Mini Grep is a command-line text search utility inspired by the Unix `grep` tool.
-The project focuses on implementing pattern searching in text files using C++, while strengthening understanding of file handling, string processing, and command-line programs.
-
-## Objectives
-- Understand how text-search utilities work internally  
-- Practice efficient file reading and string matching  
-- Build familiarity with command-line tools  
-
-## Planned Features
-- Search for a given pattern in a text file  
-- Display matching lines with line numbers  
-- Case-sensitive and case-insensitive search  
-- Support searching across multiple files  
-- Basic error handling for invalid inputs  
+---
 
 ## Tech Stack
-- Language: C++  
-- Concepts: File Handling, Strings, CLI Programs  
-- Tools: Git, GitHub  
+- **Language:** C++
+- **Concepts Used:**
+  - File handling using `ifstream`
+  - Command-line argument parsing
+  - String manipulation
+  - Case-insensitive text processing
+  - Error handling
+- **Tools:** Git, GitHub
+
+---
 
 ## Project Structure
 ```
@@ -49,53 +41,42 @@ mini-grep/
 └── README.md
 ```
 
-## Roadmap
-- Implement basic pattern matching  
-- Add command-line argument parsing  
-- Improve performan# Mini Grep
+---
 
-## Status
-Work in progress
+## Usage
 
-## Description
-Mini Grep is a command-line text search utility inspired by the Unix `grep` tool.
-The project focuses on implementing pattern searching in text files using C++, while strengthening understanding of file handling, string processing, and command-line programs.
-
-## Objectives
-- Understand how text-search utilities work internally  
-- Practice efficient file reading and string matching  
-- Build familiarity with command-line tools  
-
-## Planned Features
-- Search for a given pattern in a text file  
-- Display matching lines with line numbers  
-- Case-sensitive and case-insensitive search  
-- Support searching across multiple files  
-- Basic error handling for invalid inputs  
-
-## Tech Stack
-- Language: C++  
-- Concepts: File Handling, Strings, CLI Programs  
-- Tools: Git, GitHub  
-
-## Project Structure
-```
-mini-grep/
-├── src/
-│   └── main.cpp
-├── data/
-│   └── sample.txt
-└── README.md
+### Compile
+```bash
+clang++ src/main.cpp -o minigrep
 ```
 
-## Roadmap
-- Implement basic pattern matching  
-- Add command-line argument parsing  
-- Improve performance and edge case handling  
-- Extend features similar to Unix grep  
+### Run
+```bash
+./minigrep <keyword> <filename>
+```
+
+### Example
+```bash
+./minigrep error sample.txt
+```
+
+---
 
 ## Learning Outcomes
-- Strong understanding of file I/O in C++  
-- Experience building command-line utilities  
-- Improved problem-solving and debugging skills # mini-grep
-Command-line text search tool inspired by Unix grep, implemented in C++
+- Built a real-world command-line utility in C++
+- Improved understanding of file I/O and string processing
+- Gained experience with CLI-based program design
+- Practiced debugging and edge-case handling
+
+---
+
+## Future Improvements
+- Support searching across multiple files
+- Add command-line flags (`-i`, `-n`, `-c`)
+- Regex-based pattern matching
+- Recursive directory search
+
+---
+
+## Author
+Rakshit Sharma
